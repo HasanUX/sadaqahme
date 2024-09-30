@@ -1,0 +1,33 @@
+//abstracts scss
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+//base scss
+@import "base/base";
+
+//components scss
+@import "components/header";
+@import "components/app";
+@import "components/common";
+@import "components/login";
+@import "components/navbar";
+@import "components/projects";
+@import "components/featureSection";
+@import "components/ramadan";
+@import "components/details";
+@import "components/orgs";
+@import "components/counters";
+@import "components/giftStore";
+@import "components/disability";
+@import "components/about";
+@import "components/timeline";
+@import "components/blog";
+@import "components/privacy";
+@import "components/addProject";
+@import "components/showcase";
+@import "components/team";
+@import "components/footer";
+@import "components/summary";
+
+//grid
+@import "layout/grid";

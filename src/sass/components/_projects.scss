@@ -1,0 +1,221 @@
+.type {
+  margin-bottom: 3rem;
+  padding: 10rem 0 0 0;
+  @media screen and (max-width: $breakpoint-tablet) {
+    margin-top: 0rem;
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__col {
+    margin-top: 1rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 0rem;
+    }
+  }
+
+  .btn {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    margin-right: 10px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 13px;
+      margin-bottom: 1rem;
+      margin-right: 6px;
+    }
+    &:hover {
+      color: $textWhite;
+      background-color: $primaryGreenLight;
+    }
+  }
+}
+
+.type .accordion .accordion-button {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+}
+
+.type .accordion .accordion-button::after {
+  transform: rotate(0deg);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem;
+}
+
+.type .accordion .accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+}
+
+//.container.type.d-none > .projects__title.home__first {
+//  @media screen and (max-width: $breakpoint-tablet) {
+//    margin-top: 12rem !important;
+//  }
+//}
+
+.projects {
+  padding: 30px 0 0 0;
+  width: 100%;
+
+  &__title {
+    margin-bottom: 75px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 9rem;
+    }
+  }
+
+  //  &__title.home__first {
+  //    @media screen and (max-width: $breakpoint-tablet) {
+  //      margin-top: 12rem;
+  //    }
+  //  }
+
+  &__saveProject {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  &__project-row {
+    @media screen and (max-width: $breakpoint-tablet) {
+      --bs-gutter-y: 0.25rem;
+      --bs-gutter-x: 0.25rem;
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+  }
+
+  &__project-link {
+    text-decoration: none;
+  }
+
+  &__project-orgBold {
+    font-size: 13px;
+  }
+
+  &__project-org {
+    margin-top: 20px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 12px;
+    }
+  }
+
+  &__project-btn {
+    @include btnCTA;
+    &:hover {
+      color: $primaryGrey;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  &__SaveProject {
+    position: absolute;
+    top: 13.5rem;
+    right: 1rem;
+    z-index: auto;
+    padding: 5px;
+    color: $primaryGreenDark;
+    border-radius: 50%;
+    border: 1px solid $primaryGreenDark;
+    border-color: $primaryGreenDark;
+  }
+
+  &__progress-bar {
+    color: $primaryBlack;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 12px;
+    }
+  }
+
+  &__project-heading {
+    font-size: 22px;
+    margin-top: 5px;
+    color: $primaryGreenDark;
+    font-weight: bold;
+    text-decoration: none;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 14px;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__project-icon {
+    margin-bottom: 25px;
+  }
+
+  &__project-card {
+    position: relative;
+    margin-right: 1.5rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-right: 0;
+    }
+  }
+
+  &__project-btntag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__project-created {
+    font-style: italic;
+    margin-top: -10px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 11px;
+      margin-bottom: -20px;
+    }
+  }
+
+  &__project-tag {
+    //position: absolute;
+    //bottom: 1.5rem;
+    //right: 1rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 10px;
+      //  position: relative;
+      //  right: 0;
+      //  left: 0;
+      border-radius: 0;
+      text-align: left;
+    }
+  }
+
+  &__project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    @media screen and (max-width: $breakpoint-tablet) {
+      height: 115px;
+      object-fit: fill;
+    }
+  }
+
+  &__project-cardBody {
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding: 10px 10px;
+    }
+  }
+}
+
+.zakat {
+  padding: 7rem 0 0 0;
+  @media screen and (max-width: $breakpoint-tablet) {
+    //margin-top: 8rem;
+  }
+}

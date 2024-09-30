@@ -1,0 +1,35 @@
+.promoteVdo {
+  padding: 4.5rem 0;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 2rem 0;
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 44px;
+    margin-bottom: 1.5rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+
+  &__orgName {
+    @media screen and (max-width: $breakpoint-tablet) {
+      text-align: center;
+    }
+  }
+
+  &__iframeDiv {
+    text-align: center;
+  }
+
+  &__iframe {
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: auto;
+      height: 100%;
+    }
+  }
+}

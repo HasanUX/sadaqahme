@@ -1,0 +1,32 @@
+// primary colors
+
+$primaryWhite: #fff;
+$primaryBlack: #141414;
+$primaryGrey: #e8e6e6;
+$primaryGreenLight: #1aa78d;
+$primaryGreenRegular: #0b7965;
+$primaryGreenDark: #004b3e;
+
+// text colors
+$textBlack: $primaryBlack;
+$textWhite: #f7f7f7;
+$link: #0a58ca;
+
+//btn colors
+$lightBG: $primaryGreenLight;
+$regularBG: $primaryGreenRegular;
+$darkBG: $primaryGreenDark;
+
+//grid
+//columns
+
+$columns: 12;
+
+//z-index values
+
+$zindex-sticky: 1020;
+
+//media query
+
+$breakpoint-tablet: 768px;
+$breakpoint-miniLaptop: 1024px;

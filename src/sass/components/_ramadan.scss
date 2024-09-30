@@ -1,0 +1,115 @@
+.ramadan {
+  padding: 30px 0 0 0;
+  //  margin-top: 5rem;
+  width: 100%;
+  //  @media screen and (max-width: $breakpoint-tablet) {
+  //    margin-top: 8rem;
+  //  }
+
+  &.ngos {
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 0rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 75px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 0px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__project-link {
+    text-decoration: none;
+  }
+
+  &__project-btn {
+    @include btnCTA;
+    &:hover {
+      color: $primaryGrey;
+    }
+  }
+
+  &__project-heading {
+    font-size: 22px;
+    margin-top: 5px;
+    color: $primaryGreenDark;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  &__project-icon {
+    margin-bottom: 25px;
+  }
+
+  &__project-card {
+    position: relative;
+    margin-right: 1.5rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-right: 0;
+    }
+  }
+
+  &__project-org {
+    margin-top: 20px;
+  }
+
+  &__project-created {
+    font-style: italic;
+    margin-top: -10px;
+  }
+
+  &__project-tag {
+    //position: absolute;
+    //bottom: 1.5rem;
+    //right: 1rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 10px;
+    }
+  }
+
+  &__project-btntag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    @media screen and (max-width: $breakpoint-tablet) {
+      //  display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.ramadan-page {
+  @media screen and (max-width: $breakpoint-tablet) {
+    //margin-top: 0;
+    padding-top: 1rem;
+  }
+
+  &__title {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+.review-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    display: block;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+}

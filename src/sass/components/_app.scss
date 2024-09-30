@@ -1,0 +1,18 @@
+.AppLanding {
+  padding: 15rem 15rem 20rem 15rem;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 15rem 1rem;
+  }
+
+  &__playstoreicon {
+    width: 20rem;
+    height: auto;
+
+    //@media screen and (max-width: $breakpoint-tablet) {
+    //  .AppLanding {
+    //    padding: 20rem 15rem 20rem 15rem;
+    //  }
+    //}
+  }
+}

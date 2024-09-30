@@ -1,0 +1,29 @@
+.addProject {
+  padding: 7rem;
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 7rem 1rem 7rem 1rem;
+  }
+
+  &__subTitle {
+    letter-spacing: 1px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      letter-spacing: 0;
+    }
+  }
+}
+
+.btn-success {
+  background-color: #0b685c;
+}
+
+.btn-success:hover {
+  background: $primaryGreenLight;
+}
+
+.projectPdf {
+  max-width: 800px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  padding: 20px 50px;
+}

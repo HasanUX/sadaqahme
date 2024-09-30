@@ -1,0 +1,76 @@
+.orgs {
+  padding: 10rem 0 0 0;
+  //  margin-top: 5rem;
+  width: 100%;
+  @media screen and (max-width: $breakpoint-tablet) {
+    //margin-top: 13rem;
+  }
+
+  &__project-row.project-first-col-hide .col-md-3:nth-of-type(1) {
+    display: none;
+  }
+
+  &__title {
+    //margin-bottom: 75px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 75px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__subTitle {
+    margin-top: 0;
+    margin-bottom: 75px;
+  }
+
+  &__project-btn {
+    @include btnCTA;
+    &:hover {
+      color: $primaryGrey;
+    }
+  }
+
+  &__project-heading {
+    font-size: 22px;
+    margin-top: 5px;
+    color: $primaryGreenDark;
+    font-weight: bold;
+  }
+
+  &__project-icon {
+    margin-bottom: 25px;
+  }
+
+  &__project-card {
+    position: relative;
+    margin-right: 1.5rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-right: 0;
+    }
+  }
+
+  &__project-org {
+    margin-top: 20px;
+  }
+
+  &__project-created {
+    font-style: italic;
+    margin-top: -10px;
+  }
+
+  &__project-tag {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 10px;
+    }
+  }
+
+  &__project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}

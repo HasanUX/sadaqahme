@@ -1,0 +1,146 @@
+.showcase {
+  //  @include bgImg("/src/img/banner.jpeg");
+  //  width: 100%;
+  //  height: 400px;
+  //  background-color: rgba(0, 0, 0, 0.6);
+  //  @include flexVertical();
+
+  //  @media screen and (max-width: $breakpoint-tablet) {
+  //    height: 530px;
+  //    margin-bottom: 12rem;
+  //  }
+
+  &__content h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: $textWhite;
+  }
+
+  &__vector-img {
+    width: 10rem;
+    height: 100%;
+  }
+
+  &__daily-hadith {
+    //position: relative;
+  }
+
+  &__card-one {
+    //position: absolute;
+    //top: -5rem;
+    // right: 10rem;
+    //width: 100%;
+    //padding: 40px;
+    background-color: $primaryGreenRegular;
+    border-radius: 20px;
+    //border-top-left-radius: 43px;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: auto;
+      top: -27.5rem;
+
+      h5 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__reg-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &__card-two {
+    //position: absolute;
+    //top: -5rem;
+    // right: 10rem;
+    width: 100%;
+    padding: 40px;
+    background-color: $primaryWhite;
+    border-radius: 20px;
+    //border-bottom-right-radius: 43px;
+
+    h6 {
+      line-height: 26px;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: auto;
+      padding: 25px;
+      top: 0;
+    }
+  }
+}
+
+.scroll-down {
+  position: relative;
+  z-index: 500;
+  transition: transform 0.5s 1.5s, opacity 0.3s 1.7s, z-index 0.5s 1.5s;
+  font-size: 32px;
+  bottom: 12rem;
+  left: calc(50% - 15rem);
+  color: rgb(255, 255, 255);
+  // width: 10rem;
+  text-align: center;
+
+  &.removed {
+    transform: translateY(-20rem);
+    opacity: 0;
+    z-index: -10;
+    transition: transform 0.5s, opacity 0.3s 0.2s, z-index 0.5s;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -3rem;
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border: 0.5rem solid #fff;
+    border-left: none;
+    border-top: none;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    animation: arrowMove 1.2s infinite;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      bottom: -1rem;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    font-size: 22px;
+    bottom: 4.5rem;
+    left: calc(50% - 11rem);
+  }
+}
+
+@keyframes arrowMove {
+  to {
+    transform: rotate(45deg) translateY(2rem) translateX(2rem);
+    opacity: 0;
+  }
+}
+@keyframes navArrowMove {
+  to {
+    transform: translateX(2rem);
+    opacity: 0;
+  }
+}

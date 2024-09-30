@@ -1,0 +1,47 @@
+.about {
+  padding-top: 0px;
+  padding-bottom: 20px;
+
+  &_logo-img {
+    width: 50%;
+  }
+
+  &__card {
+    padding: 20px;
+    display: inline-block;
+    border: none;
+  }
+
+  &__banglaDiv p {
+    text-align: justify;
+  }
+
+  &__title {
+    color: $primaryBlack;
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  &__sub-title {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    span {
+      color: $primaryGreenDark;
+    }
+  }
+
+  &__about-disclaimer {
+    p {
+      color: $primaryGreenDark;
+    }
+
+    &__about-disclaimer-header {
+      font-size: 16px;
+      letter-spacing: 14px;
+      margin-bottom: -45px;
+    }
+  }
+}

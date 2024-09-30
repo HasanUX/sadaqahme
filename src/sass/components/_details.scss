@@ -1,0 +1,231 @@
+.details {
+  padding: 8rem 5rem;
+  width: 100%;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 8rem 1rem;
+  }
+
+  &__btn {
+    @include btnCTA;
+
+    &:hover {
+      color: $primaryGrey;
+    }
+  }
+
+  &__facebookIDDiv {
+    margin-top: 25px;
+  }
+
+  &__heading {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: $primaryGreenDark;
+    font-weight: bold;
+  }
+
+  &__img {
+    width: auto;
+    height: 300px;
+    object-fit: contain;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 320px;
+    }
+  }
+
+  &__tag_socialFlex {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__socialTitle {
+    //margin-left: 1.5rem;
+    //margin-top: 1.5rem;
+    font-size: 16px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__socialResponsive {
+    display: flex;
+    align-items: baseline;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: block;
+      margin-top: 3rem;
+    }
+  }
+
+  &__socialShareBtn svg {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: rgb(73, 73, 245);
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__description {
+    font-size: 22px;
+    margin-top: 2rem;
+    //margin-bottom: 5rem;
+    color: $primaryBlack;
+    font-weight: normal;
+  }
+
+  &__facebookID {
+    margin-right: 15px;
+  }
+
+  &__social {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__projectLink {
+    margin-left: 5px;
+    color: $link;
+  }
+
+  &__card {
+    position: relative;
+    margin-right: 1.5rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-right: 0;
+    }
+  }
+
+  &__org {
+    margin-top: 20px;
+  }
+
+  &__created {
+    font-style: italic;
+    margin-top: -10px;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 10px;
+    }
+  }
+
+  &__dua {
+    //margin-top: 3rem;
+    font-weight: 600;
+    color: $primaryGreenDark;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__titleRadioFlex {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: block;
+    }
+  }
+
+  &__donatedbtn {
+    .wrapper {
+      display: inline-flex;
+      //  background: #fff;
+      height: 80px;
+      width: 350px;
+      align-items: center;
+      justify-content: space-evenly;
+      border-radius: 5px;
+      padding: 20px 15px;
+      margin-top: 1.5rem;
+      margin-left: 1.5rem;
+      //  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+      //  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+      @media screen and (max-width: $breakpoint-tablet) {
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .wrapper .option {
+      background: #fff;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 0 10px;
+      border: 2px solid $primaryGreenDark;
+      transition: all 0.3s ease;
+    }
+    .wrapper .option .dot {
+      height: 20px;
+      width: 20px;
+      background: #d9d9d9;
+      margin-right: 3px;
+      border-radius: 50%;
+      position: relative;
+    }
+    .wrapper .option .dot::before {
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: 4px;
+      width: 12px;
+      height: 12px;
+      background: $primaryGreenRegular;
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(1.5);
+      transition: all 0.3s ease;
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    #donatedid1:checked:checked ~ .option-1,
+    #sharedid1:checked:checked ~ .option-2 {
+      border-color: $primaryGreenDark;
+      background: $primaryGreenRegular;
+    }
+    #donatedid1:checked:checked ~ .option-1 .dot,
+    #sharedid1:checked:checked ~ .option-2 .dot {
+      background: #fff;
+    }
+    #donatedid1:checked:checked ~ .option-1 .dot::before,
+    #sharedid1:checked:checked ~ .option-2 .dot::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .wrapper .option span {
+      font-size: 18px;
+      color: #222;
+    }
+    #donatedid1:checked:checked ~ .option-1 span,
+    #sharedid1:checked:checked ~ .option-2 span {
+      color: #fff;
+    }
+  }
+}
+
+.bi-send-check-fill {
+  margin-right: 15px;
+  width: 24px;
+  height: 24px;
+}

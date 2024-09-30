@@ -1,0 +1,77 @@
+.giftStore {
+  &__header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    color: #f8f8f8;
+    background: linear-gradient(rgba(11, 44, 68, 0.6), rgba(23, 42, 73, 0.7)),
+      url("https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    height: 70vh;
+    @media screen and (max-width: $breakpoint-tablet) {
+      height: 52vh;
+    }
+  }
+
+  &__intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding-top: 40%;
+      padding-bottom: 20%;
+    }
+  }
+
+  &__intro-message > h1 {
+    font-size: 4em;
+    font-weight: 400;
+    text-align: left;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 28px;
+    }
+  }
+
+  &__intro-message > h4 {
+    margin-top: 3rem;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 2;
+  }
+
+  &__itemFlex {
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__flexPill {
+    margin-right: 25px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__itemTitle {
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 24px;
+    }
+  }
+
+  &__itemDetails {
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__giftImg {
+    height: 25rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 100%;
+    }
+  }
+}

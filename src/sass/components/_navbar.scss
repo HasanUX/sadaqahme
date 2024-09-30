@@ -1,0 +1,102 @@
+.bg-grey {
+  background-color: $primaryBlack;
+}
+
+.navbar {
+  padding: 15px;
+  transition: all 0.5s linear;
+  z-index: $zindex-sticky;
+
+  //  &-dropdown-menu {
+  //  }
+
+  .nav-logo {
+    width: 200px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 215px;
+    }
+  }
+
+  &-nav {
+    z-index: $zindex-sticky;
+    .nav-item {
+      .nav-link.active {
+        color: $primaryGreenLight;
+      }
+      .nav-link {
+        font-size: 18px;
+        //background-color: $primaryGrey;
+        color: $primaryBlack;
+        border-radius: 3px;
+        padding: 5px 10px 5px 10px;
+        margin-left: 12px;
+        margin-top: 10px;
+        display: inline-block;
+        &:hover,
+        &:focus {
+          color: $primaryGreenDark;
+        }
+
+        &.nav-dropdown-link {
+          font-size: 16px;
+          margin-top: 5px;
+          margin-left: 5px;
+          margin-right: 5px;
+          padding: 5px;
+        }
+
+        .nav-link.nav-link-green {
+          background-color: $primaryGreenLight;
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+          color: $primaryBlack;
+        }
+      }
+    }
+  }
+
+  &-toggler {
+    @media screen and (max-width: $breakpoint-tablet) {
+      background: #c8fff59e;
+    }
+  }
+
+  .nav-link-black {
+    color: $textBlack !important;
+  }
+
+  .nav-item .nav-link.nav-link-green {
+    background-color: $primaryGreenLight !important;
+  }
+
+  .nav-link-white {
+    color: $textWhite;
+  }
+
+  .navbar-collapse {
+    @media screen and (max-width: $breakpoint-tablet) {
+      background-color: $primaryWhite;
+      padding: 15px 15px 25px 8px;
+      border-radius: 7px;
+      box-shadow: 0px 8px 1rem 0px rgba(0, 0, 0, 0.23);
+      margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding-top: 1.5rem;
+  }
+}
+
+.bg-transp {
+  background: transparent;
+}
+
+.navbar-shadow {
+  background: $primaryWhite;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
